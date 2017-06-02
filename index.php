@@ -162,7 +162,7 @@
 					';
 		for ($j=0; $j<$_SESSION['cartcounter']; $j++)
 		{
-			if ($_SESSION['item'.$j]==$productnames[$i])
+			if(isset($_SESSION['item'.$j]==$productnames[$i]))
 			{
 				echo '
 				<input type="submit" value="Добавлено в корзину" name="food', $i, '" disabled>
@@ -170,7 +170,7 @@
 				$is_item_added[$i]=1;
 			}
 		}
-		if ($is_item_added[$i]!=1)
+		if(isset($is_item_added[$i]!=1))
 		{
 			echo '
 			<input type="submit" value="Добавить в корзину" name="food', $i, '">
