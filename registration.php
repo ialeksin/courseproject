@@ -29,22 +29,22 @@
 						<p align="center"><input type="submit" value="Зарегистрироваться"></p>
 					</form>
 <?php
-	if ($_SESSION['login_too_short']==true)
+	if(isset($_SESSION['login_too_short']==true))
 	{
 		echo '<p align="center">Логин слишком<br>короткий.</p>';
 		$_SESSION['login_too_short']=false;
 	}
-	if ($_SESSION['login_already_exist']==true)
+	if(isset($_SESSION['login_already_exist']==true))
 	{
 		echo '<p align="center">Этот логин занят.</p>';
 		$_SESSION['login_already_exist']=false;
 	}
-	if ($_SESSION['passwords_not_the_same']==true)
+	if(isset($_SESSION['passwords_not_the_same']==true))
 	{
 		echo '<p align="center">Пароли не совпадают.</p>';
 		$_SESSION['passwords_not_the_same']=false;
 	}
-	if ($_SESSION['password_too_short']==true)
+	if(isset($_SESSION['password_too_short']==true))
 	{
 		echo '<p align="center">Пароль слишком<br>короткий.</p>';
 		$_SESSION['password_too_short']=false;
