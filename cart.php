@@ -24,14 +24,6 @@
 			border-collapse: collapse; 
 			border: 2px solid #FFDEAD; 
 			}
-			#footer {
-			position: absolute; 
-			left: 0; bottom: 0; 
-			padding: 10px; 
-			background: #FFDEAD; 
-			color: black; 
-			width: 100%; 
-			}
 		</style>
 		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
@@ -176,7 +168,7 @@
 ?>
 		<table width="1302" align="center">
 			<tr>
-				<td id="footer" colspan="4"  ALIGN=CENTER>
+				<td colspan="4"  ALIGN=CENTER>
 					<font size="3">
 						Сайт по продаже функционального питания © 2014-2017.
 						<br>
